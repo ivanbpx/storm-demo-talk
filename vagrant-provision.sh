@@ -57,11 +57,11 @@ cd ..
 
 wget https://github.com/downloads/nathanmarz/storm/storm-0.8.1.zip
 
+rm -rf storm-0.8.1
 unzip storm-0.8.1.zip 
 
-cd storm-0.8.1.zip
-sudo mkdir /mnt/storm
-sudo chmod 777 /mnt/storm
+mkdir -p /mnt/storm
+chmod 777 /mnt/storm
 
 cp /vagrant/storm.yaml ./conf
 
